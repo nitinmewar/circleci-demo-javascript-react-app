@@ -3,7 +3,7 @@ version: 2.1
 workflows:
   test-deploy:
     jobs:
-      -test
+      - test
 
 jobs:
   test:
@@ -15,6 +15,6 @@ jobs:
           name: Install depencies
           command: npm install
       - run:
-          name: Run tests
+          Name: Run tests
           command: npm run test
     
